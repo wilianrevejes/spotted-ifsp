@@ -17,11 +17,18 @@ public class HomeFragment
 	}
 
 
-	public HomeFragment () throws java.lang.Throwable
+	public HomeFragment ()
 	{
 		super ();
 		if (getClass () == HomeFragment.class)
 			mono.android.TypeManager.Activate ("Spotted.HomeFragment, Spotted, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+	}
+
+	public HomeFragment (android.app.Activity p0)
+	{
+		super ();
+		if (getClass () == HomeFragment.class)
+			mono.android.TypeManager.Activate ("Spotted.HomeFragment, Spotted, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.App.Activity, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", this, new java.lang.Object[] { p0 });
 	}
 
 
