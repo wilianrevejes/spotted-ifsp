@@ -20,11 +20,11 @@ namespace Spotted
         Activity view;
         RecyclerView mRecyclerView;
         RecyclerView.LayoutManager mLayoutManager;
-        PhotoAlbumAdapter mAdapter;
-        PhotoAlbum mPhotoAlbum;
+        PublicationAdapter mAdapter;
+        PublicationContainer mPublicationContainer;
 
-        public HomeFragment(Activity view) {
-            view = view;
+        public HomeFragment(Activity v) {
+            view = v;
         }
 
         public override void OnCreate (Bundle savedInstanceState){
@@ -34,7 +34,7 @@ namespace Spotted
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 			View view = inflater.Inflate(Resource.Layout.homeLayout, container,false);
 
-            mPhotoAlbum = new PhotoAlbum();
+            mPublicationContainer = new PublicationContainer();
 
             mRecyclerView = view.FindViewById<RecyclerView>(Resource.Id.recyclerView);
 
@@ -43,7 +43,7 @@ namespace Spotted
             mRecyclerView.SetLayoutManager(mLayoutManager);
 
             // Plug in my adapter:
-            mAdapter = new PhotoAlbumAdapter(mPhotoAlbum);
+            mAdapter = new PublicationAdapter(mPublicationContainer);
             mRecyclerView.SetAdapter(mAdapter);
 
             return view;

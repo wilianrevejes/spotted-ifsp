@@ -14,6 +14,14 @@ Spotted.PhotoViewHolder, Spotted;md543dfc6c73d48a1c3f504bee10bbe2fd0.PhotoViewHo
 Spotted.PhotoViewHolder, Spotted, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md543dfc6c73d48a1c3f504bee10bbe2fd0.PhotoViewHolder
 Spotted.PhotoViewHolder;md543dfc6c73d48a1c3f504bee10bbe2fd0.PhotoViewHolder
 spotted.PhotoViewHolder;md543dfc6c73d48a1c3f504bee10bbe2fd0.PhotoViewHolder
+Spotted.PublicationAdapter, Spotted;md543dfc6c73d48a1c3f504bee10bbe2fd0.PublicationAdapter
+Spotted.PublicationAdapter, Spotted, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md543dfc6c73d48a1c3f504bee10bbe2fd0.PublicationAdapter
+Spotted.PublicationAdapter;md543dfc6c73d48a1c3f504bee10bbe2fd0.PublicationAdapter
+spotted.PublicationAdapter;md543dfc6c73d48a1c3f504bee10bbe2fd0.PublicationAdapter
+Spotted.PublicationViewHolder, Spotted;md543dfc6c73d48a1c3f504bee10bbe2fd0.PublicationViewHolder
+Spotted.PublicationViewHolder, Spotted, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md543dfc6c73d48a1c3f504bee10bbe2fd0.PublicationViewHolder
+Spotted.PublicationViewHolder;md543dfc6c73d48a1c3f504bee10bbe2fd0.PublicationViewHolder
+spotted.PublicationViewHolder;md543dfc6c73d48a1c3f504bee10bbe2fd0.PublicationViewHolder
 Android.Support.V4.Widget.SearchViewCompat/IOnCloseListenerImplementor, Xamarin.Android.Support.Compat;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor
 Android.Support.V4.Widget.SearchViewCompat+IOnCloseListenerImplementor, Xamarin.Android.Support.Compat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor
 Android.Support.V4.Widget.SearchViewCompat.IOnCloseListenerImplementor;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor

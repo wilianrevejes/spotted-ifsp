@@ -3,5 +3,6 @@
   <PropertyGroup>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
     <SelectedDevice>Motorola MotoG3</SelectedDevice>
+    <DefaultDevice>Android_Accelerated_Nougat</DefaultDevice>
   </PropertyGroup>
 </Project>

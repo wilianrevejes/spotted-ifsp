@@ -2134,8 +2134,26 @@ namespace Spotted
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
+			// aapt resource value: 0x7f02006f
+			public const int avd_hide_password_1 = 2130837615;
+			
+			// aapt resource value: 0x7f020070
+			public const int avd_hide_password_2 = 2130837616;
+			
+			// aapt resource value: 0x7f020071
+			public const int avd_hide_password_3 = 2130837617;
+			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
+			
+			// aapt resource value: 0x7f020072
+			public const int avd_show_password_1 = 2130837618;
+			
+			// aapt resource value: 0x7f020073
+			public const int avd_show_password_2 = 2130837619;
+			
+			// aapt resource value: 0x7f020074
+			public const int avd_show_password_3 = 2130837620;
 			
 			// aapt resource value: 0x7f020055
 			public const int design_bottom_navigation_item_background = 2130837589;
@@ -2234,8 +2252,8 @@ namespace Spotted
 			// aapt resource value: 0x7f07008a
 			public const int action0 = 2131165322;
 			
-			// aapt resource value: 0x7f0700a3
-			public const int action_attach = 2131165347;
+			// aapt resource value: 0x7f0700a4
+			public const int action_attach = 2131165348;
 			
 			// aapt resource value: 0x7f070064
 			public const int action_bar = 2131165284;
@@ -2285,8 +2303,8 @@ namespace Spotted
 			// aapt resource value: 0x7f070043
 			public const int action_mode_close_button = 2131165251;
 			
-			// aapt resource value: 0x7f0700a2
-			public const int action_refresh = 2131165346;
+			// aapt resource value: 0x7f0700a3
+			public const int action_refresh = 2131165347;
 			
 			// aapt resource value: 0x7f070089
 			public const int action_text = 2131165321;
@@ -2353,6 +2371,9 @@ namespace Spotted
 			
 			// aapt resource value: 0x7f070076
 			public const int container = 2131165302;
+			
+			// aapt resource value: 0x7f0700a0
+			public const int content = 2131165344;
 			
 			// aapt resource value: 0x7f07004e
 			public const int contentPanel = 2131165262;
@@ -2477,8 +2498,8 @@ namespace Spotted
 			// aapt resource value: 0x7f070048
 			public const int list_item = 2131165256;
 			
-			// aapt resource value: 0x7f0700a1
-			public const int masked = 2131165345;
+			// aapt resource value: 0x7f0700a2
+			public const int masked = 2131165346;
 			
 			// aapt resource value: 0x7f07008d
 			public const int media_actions = 2131165325;
@@ -2492,17 +2513,17 @@ namespace Spotted
 			// aapt resource value: 0x7f070019
 			public const int multiply = 2131165209;
 			
+			// aapt resource value: 0x7f0700a8
+			public const int nav_SearchApartment = 2131165352;
+			
 			// aapt resource value: 0x7f0700a7
-			public const int nav_SearchApartment = 2131165351;
-			
-			// aapt resource value: 0x7f0700a6
-			public const int nav_friends = 2131165350;
-			
-			// aapt resource value: 0x7f0700a4
-			public const int nav_home = 2131165348;
+			public const int nav_friends = 2131165351;
 			
 			// aapt resource value: 0x7f0700a5
-			public const int nav_messages = 2131165349;
+			public const int nav_home = 2131165349;
+			
+			// aapt resource value: 0x7f0700a6
+			public const int nav_messages = 2131165350;
 			
 			// aapt resource value: 0x7f070086
 			public const int nav_view = 2131165318;
@@ -2723,8 +2744,8 @@ namespace Spotted
 			// aapt resource value: 0x7f07000e
 			public const int view_offset_helper = 2131165198;
 			
-			// aapt resource value: 0x7f0700a0
-			public const int visible = 2131165344;
+			// aapt resource value: 0x7f0700a1
+			public const int visible = 2131165345;
 			
 			// aapt resource value: 0x7f070027
 			public const int withText = 2131165223;
@@ -2969,16 +2990,19 @@ namespace Spotted
 			public const int PhotoCardView = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int select_dialog_item_material = 2130903101;
+			public const int PublicationCardView = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int select_dialog_multichoice_material = 2130903102;
+			public const int select_dialog_item_material = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int select_dialog_singlechoice_material = 2130903103;
+			public const int select_dialog_multichoice_material = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int support_simple_spinner_dropdown_item = 2130903104;
+			public const int select_dialog_singlechoice_material = 2130903104;
+			
+			// aapt resource value: 0x7f030041
+			public const int support_simple_spinner_dropdown_item = 2130903105;
 			
 			static Layout()
 			{

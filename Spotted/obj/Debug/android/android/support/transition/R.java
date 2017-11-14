@@ -2767,7 +2767,13 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020051;
         public static final int abc_vector_test=0x7f020052;
         public static final int avd_hide_password=0x7f020053;
+        public static final int avd_hide_password_1=0x7f02006f;
+        public static final int avd_hide_password_2=0x7f020070;
+        public static final int avd_hide_password_3=0x7f020071;
         public static final int avd_show_password=0x7f020054;
+        public static final int avd_show_password_1=0x7f020072;
+        public static final int avd_show_password_2=0x7f020073;
+        public static final int avd_show_password_3=0x7f020074;
         public static final int design_bottom_navigation_item_background=0x7f020055;
         public static final int design_fab_background=0x7f020056;
         public static final int design_ic_visibility=0x7f020057;
@@ -2798,7 +2804,7 @@ containing a value of this type.
     public static final class id {
         public static final int HomeFrameLayout=0x7f070085;
         public static final int action0=0x7f07008a;
-        public static final int action_attach=0x7f0700a3;
+        public static final int action_attach=0x7f0700a4;
         public static final int action_bar=0x7f070064;
         public static final int action_bar_activity_content=0x7f070001;
         public static final int action_bar_container=0x7f070063;
@@ -2815,7 +2821,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f070061;
         public static final int action_mode_bar_stub=0x7f070060;
         public static final int action_mode_close_button=0x7f070043;
-        public static final int action_refresh=0x7f0700a2;
+        public static final int action_refresh=0x7f0700a3;
         public static final int action_text=0x7f070089;
         public static final int actions=0x7f070097;
         public static final int activity_chooser_view_content=0x7f070044;
@@ -2838,6 +2844,7 @@ containing a value of this type.
         public static final int clip_vertical=0x7f07003a;
         public static final int collapseActionView=0x7f070024;
         public static final int container=0x7f070076;
+        public static final int content=0x7f0700a0;
         public static final int contentPanel=0x7f07004e;
         public static final int coordinator=0x7f070077;
         public static final int custom=0x7f070055;
@@ -2879,15 +2886,15 @@ containing a value of this type.
         public static final int line3=0x7f07009b;
         public static final int listMode=0x7f07000f;
         public static final int list_item=0x7f070048;
-        public static final int masked=0x7f0700a1;
+        public static final int masked=0x7f0700a2;
         public static final int media_actions=0x7f07008d;
         public static final int middle=0x7f070022;
         public static final int mini=0x7f07003e;
         public static final int multiply=0x7f070019;
-        public static final int nav_SearchApartment=0x7f0700a7;
-        public static final int nav_friends=0x7f0700a6;
-        public static final int nav_home=0x7f0700a4;
-        public static final int nav_messages=0x7f0700a5;
+        public static final int nav_SearchApartment=0x7f0700a8;
+        public static final int nav_friends=0x7f0700a7;
+        public static final int nav_home=0x7f0700a5;
+        public static final int nav_messages=0x7f0700a6;
         public static final int nav_view=0x7f070086;
         public static final int navigation_header_container=0x7f07007c;
         public static final int never=0x7f070026;
@@ -2961,7 +2968,7 @@ containing a value of this type.
         public static final int up=0x7f070009;
         public static final int useLogo=0x7f070018;
         public static final int view_offset_helper=0x7f07000e;
-        public static final int visible=0x7f0700a0;
+        public static final int visible=0x7f0700a1;
         public static final int withText=0x7f070027;
         public static final int wrap_content=0x7f07001f;
     }
@@ -3038,10 +3045,11 @@ containing a value of this type.
         public static final int notification_template_part_chronometer=0x7f03003a;
         public static final int notification_template_part_time=0x7f03003b;
         public static final int photocardview=0x7f03003c;
-        public static final int select_dialog_item_material=0x7f03003d;
-        public static final int select_dialog_multichoice_material=0x7f03003e;
-        public static final int select_dialog_singlechoice_material=0x7f03003f;
-        public static final int support_simple_spinner_dropdown_item=0x7f030040;
+        public static final int publicationcardview=0x7f03003d;
+        public static final int select_dialog_item_material=0x7f03003e;
+        public static final int select_dialog_multichoice_material=0x7f03003f;
+        public static final int select_dialog_singlechoice_material=0x7f030040;
+        public static final int support_simple_spinner_dropdown_item=0x7f030041;
     }
     public static final class menu {
         public static final int action_menu=0x7f0d0000;
