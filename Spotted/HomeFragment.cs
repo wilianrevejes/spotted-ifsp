@@ -1,24 +1,17 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.OS;
-using Android.Runtime;
-using Android.Util;
 using Android.Views;
-using Android.Widget;
 using Android.Support.V7.Widget;
-using Android.Support.V7.App;
+using Android.Support.Design.Widget;
+using Android.Widget;
+using Android.Content;
 
 namespace Spotted
 {
 	public class HomeFragment : Fragment{
         Activity view;
         RecyclerView mRecyclerView;
+        FloatingActionButton fab;
         RecyclerView.LayoutManager mLayoutManager;
         PublicationAdapter mAdapter;
         PublicationContainer mPublicationContainer;
@@ -29,14 +22,23 @@ namespace Spotted
 
         public override void OnCreate (Bundle savedInstanceState){
 			base.OnCreate (savedInstanceState);
-		}
+            
+        }
 
-		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+        public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 			View view = inflater.Inflate(Resource.Layout.homeLayout, container,false);
 
             mPublicationContainer = new PublicationContainer();
 
             mRecyclerView = view.FindViewById<RecyclerView>(Resource.Id.recyclerView);
+
+            fab = view.FindViewById<FloatingActionButton>(Resource.Id.fab);
+            //Floating action button
+            fab.Click += (sender, args) => {
+                var NxtAct = new Intent(view.Context, typeof(PublicationActivity));
+                StartActivity(NxtAct);
+            };
+
 
             // Plug in the linear layout manager:
             mLayoutManager = new LinearLayoutManager(this.view);

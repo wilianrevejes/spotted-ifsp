@@ -40,6 +40,8 @@ namespace Spotted
 
         static Publication[] mBuiltInPublications = {
             new Publication { mPublicationID = 1, mContent = "Lorem ipsum dolor sit amet. Consectetur adipiscing elit." },
+            new Publication { mPublicationID = 2, mContent = "LOREM IPSUM DOLOR SIT AMET. CONSECTETUR ADIPISCING ELIT."},
+            new Publication { mPublicationID = 2, mContent = "LOREM IPSUM DOLOR SIT AMET. CONSECTETUR ADIPISCING ELIT."},
             new Publication { mPublicationID = 2, mContent = "LOREM IPSUM DOLOR SIT AMET. CONSECTETUR ADIPISCING ELIT."}
         };
 
