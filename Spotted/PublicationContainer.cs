@@ -1,68 +1,51 @@
 ﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
-using Android.Support.V7.Widget;
+using Spotted.Factory;
 using System.Collections.Generic;
 
-namespace Spotted
-{
-    // Photo: contains image resource ID and caption:
-    public class Publication
-    {
-        // Photo ID for this photo:
-        public int mPublicationID;
-
-        // Caption text for this photo:
-        public string mContent;
-
-        // Return the ID of the photo:
-        public int PublicationID
-        {
-            get { return mPublicationID; }
+namespace Spotted {
+    public class Publication {
+        public string _id;
+        public string content;
+        public string[] likes;
+        public string[] comments;
+        
+        public string PublicationID {
+            get { return _id; }
         }
-
-        // Return the Caption of the photo:
-        public string Content
-        {
-            get { return mContent; }
+        
+        public string Content {
+            get { return content; }
         }
     }
-
-    // Photo album: holds image resource IDs and caption:
+    
     public class PublicationContainer
     {
-        // Built-in photo collection - this could be replaced with
-        // a photo database:
+        PublicationFactory pf;
+        private IList<Publication> mPublications;
 
-        static Publication[] mBuiltInPublications = {
-            new Publication { mPublicationID = 1, mContent = "Lorem ipsum dolor sit amet. Consectetur adipiscing elit." },
-            new Publication { mPublicationID = 2, mContent = "LOREM IPSUM DOLOR SIT AMET. CONSECTETUR ADIPISCING ELIT."},
-            new Publication { mPublicationID = 2, mContent = "LOREM IPSUM DOLOR SIT AMET. CONSECTETUR ADIPISCING ELIT."},
-            new Publication { mPublicationID = 2, mContent = "LOREM IPSUM DOLOR SIT AMET. CONSECTETUR ADIPISCING ELIT."}
-        };
-
-        // Array of photos that make up the album:
-        private Publication[] mPublications;
-
-        // Random number generator for shuffling the photos:
         Random mRandom;
 
-        // Create an instance copy of the built-in photo list and
-        // create the random number generator:
         public PublicationContainer()
         {
-            mPublications = mBuiltInPublications;
+            pf = new PublicationFactory();
+            var response = pf.getAll();
+            
+            mPublications = response;
             mRandom = new Random();
+        }
+
+        public void populatePublications() {
+            pf = new PublicationFactory();
+
+            var response = pf.getAll();
+            
+            mPublications = response;
         }
 
         // Return the number of photos in the photo album:
         public int NumPublications
         {
-            get { return mPublications.Length; }
+            get { return mPublications.Count; }
         }
 
         // Indexer (read only) for accessing a photo:
@@ -79,7 +62,7 @@ namespace Spotted
 
             // Generate a next random index between 1 and 
             // Length (noninclusive):
-            int rnd = mRandom.Next(1, mPublications.Length);
+            int rnd = mRandom.Next(1, mPublications.Count);
 
             // Exchange top photo with randomly-chosen photo:
             mPublications[0] = mPublications[rnd];
@@ -93,14 +76,14 @@ namespace Spotted
         public void Shuffle()
         {
             // Use the Fisher-Yates shuffle algorithm:
-            for (int idx = 0; idx < mPublications.Length; ++idx)
+            for (int idx = 0; idx < mPublications.Count; ++idx)
             {
                 // Save the photo at idx:
                 Publication tmpPhoto = mPublications[idx];
 
                 // Generate a next random index between idx (inclusive) and 
                 // Length (noninclusive):
-                int rnd = mRandom.Next(idx, mPublications.Length);
+                int rnd = mRandom.Next(idx, mPublications.Count);
 
                 // Exchange photo at idx with randomly-chosen (later) photo:
                 mPublications[idx] = mPublications[rnd];

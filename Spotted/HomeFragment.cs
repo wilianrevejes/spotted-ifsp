@@ -51,6 +51,13 @@ namespace Spotted
             return view;
 		}
 
-	}
+        public override void OnResume() {
+            base.OnResume();
+
+            mPublicationContainer.populatePublications();
+            mAdapter.NotifyDataSetChanged();
+        }
+
+    }
 }
 
