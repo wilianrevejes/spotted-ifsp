@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/CadastrolinearLayout"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome Completo"
+        android:id="@+id/nome" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:src="@drawable/ic_calendar"
+            android:layout_width="40dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="5dp"
+            android:background="#2196F3"
+            android:id="@+id/btn_data_nascimento"
+            android:padding="5dp" />
+        <EditText
+            android:inputType="date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data de Nascimento"
+            android:id="@+id/data_nascimento" />
+    </LinearLayout>
+</LinearLayout>
