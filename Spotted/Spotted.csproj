@@ -50,6 +50,9 @@
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -95,11 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatePickerFragment.cs" />
+    <Compile Include="Factory\PublicationFactory.cs" />
     <Compile Include="HomeFragment.cs" />
+    <Compile Include="CadastroActivity.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="PhotoAlbum.cs" />
-    <Compile Include="PhotoAlbumAdapter.cs" />
-    <Compile Include="PhotoViewHolder.cs" />
+    <Compile Include="PublicationActivity.cs" />
     <Compile Include="PublicationContainer.cs" />
     <Compile Include="PublicationAdapter.cs" />
     <Compile Include="PublicationViewHolder.cs" />
@@ -124,12 +128,16 @@
     <AndroidResource Include="Resources\layout\PublicationCardView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\Publication.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\menu\publication_toolbar_menu.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Cadastro.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\PhotoCardView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -142,6 +150,10 @@
     <Folder Include="Resources\mipmap-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
+    <XamarinComponentReference Include="json.net">
+      <Visible>False</Visible>
+      <Version>7.0.1</Version>
+    </XamarinComponentReference>
     <XamarinComponentReference Include="xamandroidsupportdesign">
       <Visible>False</Visible>
       <Version>24.2.1.0</Version>
@@ -184,6 +196,10 @@
   <ItemGroup>
     <Content Include="NavigationDrawer.csproj" />
     <AndroidResource Include="Resources\values-v21\Styles.xml" />
+    <AndroidResource Include="Resources\drawable\ic_edit.png" />
+    <AndroidResource Include="Resources\drawable\ic_check.png" />
+    <AndroidResource Include="Resources\drawable\ic_imgCadUser.png" />
+    <AndroidResource Include="Resources\drawable\ic_calendar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
