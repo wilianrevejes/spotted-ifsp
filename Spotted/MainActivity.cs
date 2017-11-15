@@ -7,7 +7,7 @@ using Android.Support.V7.Widget;
 using Android.Support.V7.App;
 
 namespace Spotted {
-    [Activity(Label = "@string/app_name", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait, MainLauncher=true)]
+    [Activity(Label = "@string/app_name", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait, MainLauncher=false)]
     public class MainActivity : AppCompatActivity {
 
         DrawerLayout drawerLayout;
