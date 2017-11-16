@@ -3,12 +3,10 @@ using Android.OS;
 using Android.Views;
 using Android.Support.V7.Widget;
 using Android.Support.Design.Widget;
-using Android.Widget;
 using Android.Content;
 
-namespace Spotted
-{
-	public class HomeFragment : Fragment{
+namespace Spotted {
+	public class HomeFragment : Fragment {
         Activity view;
         RecyclerView mRecyclerView;
         FloatingActionButton fab;

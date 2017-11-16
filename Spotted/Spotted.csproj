@@ -98,15 +98,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatePickerFragment.cs" />
+    <Compile Include="Adapters\SpinnerAdapter.cs" />
+    <Compile Include="Classes\InstituicaoEnsino.cs" />
+    <Compile Include="Classes\Publication.cs" />
+    <Compile Include="Classes\SelectItem.cs" />
+    <Compile Include="Fragments\DatePickerFragment.cs" />
+    <Compile Include="Factory\InstituicaoEnsinoFactory.cs" />
     <Compile Include="Factory\PublicationFactory.cs" />
-    <Compile Include="HomeFragment.cs" />
+    <Compile Include="Fragments\HomeFragment.cs" />
     <Compile Include="CadastroActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="PublicationActivity.cs" />
-    <Compile Include="PublicationContainer.cs" />
-    <Compile Include="PublicationAdapter.cs" />
-    <Compile Include="PublicationViewHolder.cs" />
+    <Compile Include="Classes\PublicationContainer.cs" />
+    <Compile Include="Adapters\PublicationAdapter.cs" />
+    <Compile Include="Classes\PublicationViewHolder.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -134,7 +139,9 @@
     <AndroidResource Include="Resources\menu\publication_toolbar_menu.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\Cadastro.axml" />
+    <AndroidResource Include="Resources\layout\Cadastro.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -148,6 +155,7 @@
     <Folder Include="Resources\mipmap-xhdpi\" />
     <Folder Include="Resources\mipmap-xxhdpi\" />
     <Folder Include="Resources\mipmap-xxxhdpi\" />
+    <Folder Include="Resources\util\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="json.net">

@@ -2,7 +2,9 @@
 <resources>
   <string name="app_name">Spotted</string>
   <string name="publication_toolbar_title">Nova Publicação</string>
+  <string name="cadastro_toolbar_title">Cadastrar Conta</string>
   <string name="strBottomLine">From android material design</string>
   <string name="open_drawer">Open drawer</string>
   <string name="close_drawer">Close drawer</string>
+  <string name="instituicao_ensino_prompt">Selecione uma Escola</string>
 </resources>
