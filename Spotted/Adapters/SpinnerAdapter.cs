@@ -25,10 +25,9 @@ namespace Spotted {
             Console.WriteLine(items.Count);
 
             foreach (SelectItem item in items) {
-
-                Toast.MakeText(context, item.label, ToastLength.Short).Show();
                 this.items.Add(item);
             }
+
             this.context = context;
             this.resourceId = resourceId;
         }

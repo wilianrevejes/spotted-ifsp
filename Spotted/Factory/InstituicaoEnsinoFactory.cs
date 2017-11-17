@@ -8,7 +8,7 @@ namespace Spotted {
     class InstituicaoEnsinoFactory {
 
         WebClient wc;
-        string baseAPIUrl = "http://192.168.9.8:8080";
+        string baseAPIUrl = "http://187.49.247.78:8080";
         public static List<string> InvalidJsonElements;
 
 

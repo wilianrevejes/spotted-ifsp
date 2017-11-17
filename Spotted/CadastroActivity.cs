@@ -16,6 +16,7 @@ namespace Spotted {
         Spinner instituicaoEnsino;
         TextView dataNascimentoDisplay;
         ImageButton dateSelect;
+        Button btnCadastrar;
 
         private IList<SelectItem> instituicaoEnsinoList;
 
@@ -40,6 +41,10 @@ namespace Spotted {
             login = FindViewById<TextView>(Resource.Id.login);
             senha = FindViewById<TextView>(Resource.Id.senha);
             instituicaoEnsino = FindViewById<Spinner>(Resource.Id.instituicao_ensino);
+            btnCadastrar = FindViewById<Button>(Resource.Id.btnCadastrar);
+
+            //btn click
+            btnCadastrar.Click += handleBtnCadastrarClick;
 
             //spinner things
             InstituicaoEnsinoFactory ief = new InstituicaoEnsinoFactory();
@@ -92,12 +97,16 @@ namespace Spotted {
             }
         }
 
+        private void handleBtnCadastrarClick(object sender, EventArgs e) {
+            //UserFactory uf = new UserFactory();
+            Toast.MakeText(this, "Clicou", ToastLength.Short).Show();
+            //uf.create(nome.Text, login.Text, senha.Text, instituicaoEnsino);
+
+
+        }
 
         private void handleSelect(object sender, AdapterView.ItemSelectedEventArgs e) {
             Spinner spinner = (Spinner)sender;
-
-            string toast = string.Format("The planet is {0}", spinner.GetItemAtPosition(e.Position));
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
         }
     }
 }

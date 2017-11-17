@@ -3,7 +3,9 @@ using Android.Support.V7.Widget;
 
 namespace Spotted {
     public class PublicationAdapter : RecyclerView.Adapter {
+
         public PublicationContainer mPublicationContainer;
+
         public PublicationAdapter(PublicationContainer publicationContainer) {
             mPublicationContainer = publicationContainer;
         }

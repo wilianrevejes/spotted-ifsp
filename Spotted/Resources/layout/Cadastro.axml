@@ -17,12 +17,14 @@
     android:orientation="vertical"
     android:id="@+id/CadastrolinearLayout2"
     android:layout_width="match_parent"
-    android:paddingLeft="30dp"
-    android:paddingRight="30dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     android:background="#fff"
     android:layout_height="match_parent">
     <EditText
       android:layout_marginTop="30dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
       android:inputType="textPersonName"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -30,6 +32,8 @@
       android:id="@+id/nome" />
     <LinearLayout
       android:layout_marginTop="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
       android:orientation="horizontal"
       android:layout_width="match_parent"
       android:layout_height="wrap_content">
@@ -37,7 +41,7 @@
         android:inputType="date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="5dp"
         android:hint="Data de Nascimento"
         android:layout_weight="2"
         android:id="@+id/data_nascimento" />
@@ -49,7 +53,7 @@
         android:adjustViewBounds="true"
         android:layout_height="40dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="0dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_weight="1"
@@ -59,6 +63,8 @@
     </LinearLayout>
     <EditText
       android:layout_marginTop="15dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
       android:inputType="textEmailAddress"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -66,6 +72,8 @@
       android:id="@+id/login" />
     <EditText
       android:layout_marginTop="15dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
       android:inputType="textPassword"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -73,20 +81,27 @@
       android:id="@+id/senha" />
     <TextView
       android:layout_marginTop="15dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="@string/instituicao_ensino_prompt"/>
     <Spinner
       android:id="@+id/instituicao_ensino"
       android:layout_width="match_parent"
-      android:spinnerMode="dropdown"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:spinnerMode="dialog"
       android:layout_height="wrap_content"
       android:prompt="@string/instituicao_ensino_prompt" />
     <Button 
       android:id="@+id/btnCadastrar"
       android:background="#2196F3"
       android:textColor="#fff"
-      android:layout_marginTop="30dp"
+      android:elevation="5dp"
+      android:layout_marginTop="50dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
       android:text="Cadastrar"
       android:layout_width="match_parent"
       android:layout_height="wrap_content" />
